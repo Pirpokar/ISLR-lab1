@@ -1,4 +1,4 @@
-# Упражнение №8
+# РЈРїСЂР°Р¶РЅРµРЅРёРµ 8
 setwd("C:/Projects/R/Lesson/ISL_R/lab1")
 
 college <- read.csv("C:/Projects/R/Lesson/ISL_R/data/College.csv")
@@ -31,14 +31,14 @@ hist(college$Accept, breaks = 50)
 hist(college$Outstate, breaks = 50)
 hist(college$Room.Board, breaks = 50)
 
-# Упражнение №9
+# РЈРїСЂР°Р¶РЅРµРЅРёРµ 9
 auto <- read.csv("C:/Projects/R/Lesson/ISL_R/data/Auto.csv", header = TRUE, na.strings = "?")
 fix(auto)
 auto <- na.omit(auto)
 
 summary(auto)
-# количественные переменные - mpg, displacement, horsepower, weight, acceleration  
-# качественные переменные - cylinders, year, origin, name
+# РєРѕР»РёС‡РµСЃС‚РІРµРЅРЅС‹Рµ РїРµСЂРµРјРµРЅРЅС‹Рµ - mpg, displacement, horsepower, weight, acceleration  
+# РєР°С‡РµСЃС‚РІРµРЅРЅС‹Рµ РїРµСЂРµРјРµРЅРЅС‹Рµ - cylinders, year, origin, name
 
 range(auto$mpg)
 range(auto$cylinders)
@@ -93,7 +93,7 @@ plot(auto$origin,        auto$mpg, xlab = "origin",       ylab = "mpg")
 plot(auto$name,          auto$mpg, xlab = "name",         ylab = "mpg")
 
 
-# Упражнение №10
+# вЂќРїСЂР°Р¶РЅРµРЅРёРµ С”10
 library(MASS)
 Boston
 ?Boston
